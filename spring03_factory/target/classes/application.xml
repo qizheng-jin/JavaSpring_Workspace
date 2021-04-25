@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        通过bean标签完成对象的创建
+        id是容器对象的唯一标志
+        class: 类的全路径 包名,类名
+    -->
+    <!--
+        静态工厂实例化对象,方法必须是static的
+    -->
+
+    <bean id="calendar1" class="com.myweb.factory.StaticFactory" factory-method="getCalendar"></bean>
+
+    <!--
+        实例化工厂 步骤一:将工厂交给spring容器管理   步骤2: 通过对象调用方法
+    -->
+    <bean id="instanceFactory" class="com.myweb.factory.InstanceFactory"></bean>
+    <bean id="calendar2" factory-bean="instanceFactory" factory-method="getCalendar"></bean>
+    <!---->
+    <bean id="calendar3" class="com.myweb.factory.SpringFactory"></bean>
+</beans>
+

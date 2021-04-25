@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaSpring_Workspace.iml" filepath="$PROJECT_DIR$/.idea/JavaSpring_Workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring00_Mybatis/Spring00_Mybatis.iml" filepath="$PROJECT_DIR$/Spring00_Mybatis/Spring00_Mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring05_MVC/Spring05_MVC.iml" filepath="$PROJECT_DIR$/Spring05_MVC/Spring05_MVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring05_MVC_practice/Spring05_MVC_practice.iml" filepath="$PROJECT_DIR$/Spring05_MVC_practice/Spring05_MVC_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring05_MVC_practice1/Spring05_MVC_practice1.iml" filepath="$PROJECT_DIR$/Spring05_MVC_practice1/Spring05_MVC_practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06_annotation/Spring06_annotation.iml" filepath="$PROJECT_DIR$/Spring06_annotation/Spring06_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06_mvc/Spring06_mvc.iml" filepath="$PROJECT_DIR$/Spring06_mvc/Spring06_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" filepath="$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring01_base/spring01_base.iml" filepath="$PROJECT_DIR$/spring01_base/spring01_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" filepath="$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring03_factory/spring03_factory.iml" filepath="$PROJECT_DIR$/spring03_factory/spring03_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring03_factory_practice/spring03_factory_practice.iml" filepath="$PROJECT_DIR$/spring03_factory_practice/spring03_factory_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring04_DI/spring04_DI.iml" filepath="$PROJECT_DIR$/spring04_DI/spring04_DI.iml" />
+    </modules>
+  </component>
+</project>

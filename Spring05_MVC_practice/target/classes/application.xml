@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="student" class="com.myweb.pojo.Student">
+        <property name="id" value="1"></property>
+        <property name="name" value="小明"></property>
+        <property name="age" value="20"></property>
+        <property name="courseList">
+            <list>
+                <value>语文</value>
+                <value>数学</value>
+                <value>英语</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="studentDao" class="com.myweb.dao.StudentDaoImpl"></bean>
+
+    <bean id="studentService" class="com.myweb.service.StudentServiceImpl">
+            <property name="studentDao" ref="studentDao"></property>
+    </bean>
+
+    <bean id="studentController" class="com.myweb.controller.StudentController">
+        <property name="studentService" ref="studentService"></property>
+        <property name="student" ref="student"></property>
+    </bean>
+</beans>

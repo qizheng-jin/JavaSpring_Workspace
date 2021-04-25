@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        通过bean标签完成对象的创建
+        id是容器对象的唯一标志
+        class: 类的全路径 包名,类名
+
+       Spring容器默认对象都是单例对象(通过构造方法实例化对象)
+       可以通过scope属性控制对象的单例和多例
+       单例: singleton 多例: prototype
+       懒加载默认值为false
+       lazy-init="true" 开启懒加载
+       多例对象都是懒加载, 懒加载只对单例对象有效
+
+        对象的生命周期
+        init-method="初始化方法名"初始化方法
+        destroy-method="销毁方法名"销毁方法
+    -->
+    <bean id="user" class="com.myweb.pojo.User" scope="singleton" lazy-init="true" init-method="init" destroy-method="destroy">
+        <property name="name" value="first"></property>
+    </bean>
+</beans>

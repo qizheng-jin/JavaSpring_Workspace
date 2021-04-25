@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="staticFactory" class="com.myweb.pojo.StaticCalendar"></bean>
+
+<bean id="instanceFactory" class="com.myweb.pojo.InstanceCalendar"></bean>
+<bean id="instanceCalendar" factory-bean="instanceFactory" factory-method="getCalendar"></bean>
+
+<bean id="SpringFactory" class="com.myweb.pojo.SpringFactoryCalendar"></bean>
+
+</beans>

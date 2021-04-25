@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring06_mvc" />
+        <module name="Spring05_MVC" />
+        <module name="spring03_factory_practice" />
+        <module name="spring04_DI" />
+        <module name="spring02_ioc" />
+        <module name="spring03_factory" />
+        <module name="Spring00_Mybatis" />
+        <module name="Spring05_MVC_practice1" />
+        <module name="Spring05_MVC_practice" />
+        <module name="Spring07_TransactionManager" />
+        <module name="Spring06_annotation" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spring00_Mybatis" target="1.8" />
+      <module name="spring02_ioc" target="1.8" />
+      <module name="spring03_factory" target="1.8" />
+      <module name="spring03_factory_practice" target="1.8" />
+      <module name="spring04_DI" target="1.8" />
+      <module name="Spring05_MVC" target="1.8" />
+      <module name="Spring05_MVC_practice" target="1.8" />
+      <module name="Spring05_MVC_practice1" target="1.8" />
+      <module name="Spring06_annotation" target="1.8" />
+      <module name="Spring06_mvc" target="1.8" />
+      <module name="Spring07_TransactionManager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

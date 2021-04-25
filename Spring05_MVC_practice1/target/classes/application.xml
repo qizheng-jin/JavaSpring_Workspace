@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="emp" class="com.myweb.pojo.Emp">
+        <property name="id" value="11"></property>
+        <property name="name" value="关羽"></property>
+        <property name="job" value="保安"></property>
+        <property name="salary" value="8000"></property>
+    </bean>
+
+    <bean id="empDao" class="com.myweb.dao.EmpDaoImpl"></bean>
+    <bean id="empService" class="com.myweb.service.EmpServiceImpl">
+        <property name="empDao" ref="empDao"></property>
+    </bean>
+    <bean id="empController" class="com.myweb.controller.EmpController">
+        <property name="empService" ref="empService"></property>
+        <property name="emp" ref="emp"></property>
+    </bean>
+</beans>

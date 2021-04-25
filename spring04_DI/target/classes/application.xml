@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--管理User对象-->
+    <bean id="user" class="com.myweb.pojo.User">
+        <property name="id" value="001"></property>
+        <property name="name" value="刘备"></property>
+        <property name="list">
+            <list>
+                <value>孙坚</value>
+                <value>孙策</value>
+                <value>孙权</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+        <property name="map" ref="map">
+<!--            <map>-->
+<!--                <entry key="id" value="0004"></entry>-->
+<!--                <entry key="name" value="曹操"></entry>-->
+<!--                <entry key="age" value="50"></entry>-->
+<!--            </map>-->
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="id">0005</prop>
+                <prop key="name">荀彧</prop>
+                <prop key="age">60</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="user_constr" class="com.myweb.pojo.User">
+        <constructor-arg name="id" value="002"></constructor-arg>
+        <constructor-arg name="name" value="关羽"></constructor-arg>
+    </bean>
+
+    <util:map id="map">
+        <entry key="id" value="0004"></entry>
+        <entry key="name" value="曹丕"></entry>
+        <entry key="age" value="50"></entry>
+    </util:map>
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+<!--    构建user对象-->
+    <bean id="user" class="com.myweb.pojo.User">
+        <property name="id" value="100"></property>
+        <property name="name" value="小明"></property>
+    </bean>
+<!--
+        构建Dao对象 面向接口编程
+        ID: 接口的名称
+        Class: 实现类的包路径
+-->
+    <bean id="userDao" class="com.myweb.dao.UserDaoImpl"></bean>
+<!--
+    构建service同Dao, userDao是引用对象需要用ref引用一个ID
+-->
+    <bean id="userService" class="com.myweb.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+<!--
+    构建controller
+-->
+    <bean id="userController" class="com.myweb.controller.UserController">
+        <property name="userService" ref="userService"></property>
+        <property name="user" ref="user"></property>
+    </bean>
+</beans>
