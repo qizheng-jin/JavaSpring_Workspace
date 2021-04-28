@@ -17,6 +17,13 @@
         <option value="$PROJECT_DIR$/Spring06_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Spring06_mvc/pom.xml" />
         <option value="$PROJECT_DIR$/Spring07_TransactionManager/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring06_annotation_practice/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring06_mvc_practice/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring08_AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring08_AOP_practice/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot01_rebuild/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot02_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot02_mybatis_practice/pom.xml" />
       </list>
     </option>
   </component>

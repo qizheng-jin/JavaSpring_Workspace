@@ -8,13 +8,20 @@
       <module fileurl="file://$PROJECT_DIR$/Spring05_MVC_practice/Spring05_MVC_practice.iml" filepath="$PROJECT_DIR$/Spring05_MVC_practice/Spring05_MVC_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring05_MVC_practice1/Spring05_MVC_practice1.iml" filepath="$PROJECT_DIR$/Spring05_MVC_practice1/Spring05_MVC_practice1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring06_annotation/Spring06_annotation.iml" filepath="$PROJECT_DIR$/Spring06_annotation/Spring06_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06_annotation_practice/Spring06_annotation_practice.iml" filepath="$PROJECT_DIR$/Spring06_annotation_practice/Spring06_annotation_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring06_mvc/Spring06_mvc.iml" filepath="$PROJECT_DIR$/Spring06_mvc/Spring06_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring06_mvc_practice/Spring06_mvc_practice.iml" filepath="$PROJECT_DIR$/Spring06_mvc_practice/Spring06_mvc_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" filepath="$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring08_AOP/Spring08_AOP.iml" filepath="$PROJECT_DIR$/Spring08_AOP/Spring08_AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring08_AOP_practice/Spring08_AOP_practice.iml" filepath="$PROJECT_DIR$/Spring08_AOP_practice/Spring08_AOP_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring01_base/spring01_base.iml" filepath="$PROJECT_DIR$/spring01_base/spring01_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" filepath="$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring03_factory/spring03_factory.iml" filepath="$PROJECT_DIR$/spring03_factory/spring03_factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring03_factory_practice/spring03_factory_practice.iml" filepath="$PROJECT_DIR$/spring03_factory_practice/spring03_factory_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring04_DI/spring04_DI.iml" filepath="$PROJECT_DIR$/spring04_DI/spring04_DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot01_rebuild/springboot01_rebuild.iml" filepath="$PROJECT_DIR$/springboot01_rebuild/springboot01_rebuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot02_mybatis/springboot02_mybatis.iml" filepath="$PROJECT_DIR$/springboot02_mybatis/springboot02_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" filepath="$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" />
     </modules>
   </component>
 </project>

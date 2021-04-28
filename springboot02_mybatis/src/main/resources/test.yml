@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /myweb
+
+spring:
+  datasource: #数据源
+    url: jdbc:mysql:///jtadmin?characterEncoding=utf8
+    username: root
+    password: root
+
+

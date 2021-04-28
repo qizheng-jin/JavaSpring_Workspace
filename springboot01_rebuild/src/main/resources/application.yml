@@ -1,0 +1,31 @@
+#修改springboot启动端口： 默认端口8080
+#server.port=8090
+
+#将文件改成yml文件
+## 1， YML数据结构k-v结构
+## 2.  k与v 需要使用 :空格 进行连接
+## 3.  YML配置文件有父子级关系, 注意缩进位置
+server:
+  port: 8090
+  servlet:   #web项目的发布路径
+    context-path:   /myweb   #/ 代表根目录
+
+# 定义dept属性值 YML默认支持UTF-8
+dept:
+  id: 100
+  name: 小明
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/jtadmin?characterEncoding=utf8
+    username: root
+    password: root
+
+#SpringBoot整合MyBatis配置
+mybatis:
+  #定义别名包
+  type-aliases-package: com.myweb.pojo
+  mapper-locations: classpath:/mybatis/mappers/*.xml
+  #开启驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true

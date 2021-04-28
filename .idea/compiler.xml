@@ -2,12 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring06_mvc" />
+        <module name="Spring08_AOP" />
         <module name="Spring05_MVC" />
+        <module name="springboot01_rebuild" />
+        <module name="Spring06_annotation_practice" />
+        <module name="Spring06_mvc_practice" />
+        <module name="Spring08_AOP_practice" />
+        <module name="springboot02_mybatis" />
+        <module name="Spring06_mvc" />
+        <module name="springboot02_mybatis_practice" />
         <module name="spring03_factory_practice" />
         <module name="spring04_DI" />
         <module name="spring02_ioc" />
@@ -29,8 +37,25 @@
       <module name="Spring05_MVC_practice" target="1.8" />
       <module name="Spring05_MVC_practice1" target="1.8" />
       <module name="Spring06_annotation" target="1.8" />
+      <module name="Spring06_annotation_practice" target="1.8" />
       <module name="Spring06_mvc" target="1.8" />
+      <module name="Spring06_mvc_practice" target="1.8" />
       <module name="Spring07_TransactionManager" target="1.8" />
+      <module name="Spring08_AOP" target="1.8" />
+      <module name="Spring08_AOP_practice" target="1.8" />
+      <module name="Spring09_Demo" target="1.8" />
+      <module name="springboot01_build" target="1.8" />
+      <module name="springboot01_rebuild" target="1.8" />
+      <module name="springboot02_mybatis" target="1.8" />
+      <module name="springboot02_mybatis_practice" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot01_build" options="-parameters" />
+      <module name="springboot01_rebuild" options="-parameters" />
+      <module name="springboot02_mybatis" options="-parameters" />
+      <module name="springboot02_mybatis_practice" options="-parameters" />
+    </option>
   </component>
 </project>
