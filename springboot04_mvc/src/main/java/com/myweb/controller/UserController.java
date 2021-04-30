@@ -3,6 +3,7 @@ package com.myweb.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +22,18 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 public class UserController {
+
+    /**
+     * 测试@RequestParam注解
+     * @param model
+     * @return
+     */
+    @RequestMapping("/addUser")
+    public String addUserParam(@RequestParam(value = "id") Integer i, String name){
+        System.out.println("参数获取: " + i + ", " + name);
+        return "success";
+    }
+
     @RequestMapping("/user")
     public String toUser(Model model){
 //        将数据通过model进行传递
@@ -29,12 +42,12 @@ public class UserController {
         return "user";
     }
 
-
-    @RequestMapping("/addUser")
-    public String addUser(Integer id, String name){
-        System.out.println("参数获取:" + id + ", "+ name);
-        return "success";
-    }
+//    这是标准方法
+//    @RequestMapping("/addUser")
+//    public String addUser(Integer id, String name){
+//        System.out.println("参数获取:" + id + ", "+ name);
+//        return "success";
+//    }
     /**
      * 请求路径: http://localhost:8090/adduser
      * 请求参数: id: 100 name: 近期正
