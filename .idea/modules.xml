@@ -22,6 +22,8 @@
       <module fileurl="file://$PROJECT_DIR$/springboot01_rebuild/springboot01_rebuild.iml" filepath="$PROJECT_DIR$/springboot01_rebuild/springboot01_rebuild.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot02_mybatis/springboot02_mybatis.iml" filepath="$PROJECT_DIR$/springboot02_mybatis/springboot02_mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" filepath="$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot03_mybatis_plus/springboot03_mybatis_plus.iml" filepath="$PROJECT_DIR$/springboot03_mybatis_plus/springboot03_mybatis_plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot04_mvc/springboot04_mvc.iml" filepath="$PROJECT_DIR$/springboot04_mvc/springboot04_mvc.iml" />
     </modules>
   </component>
 </project>

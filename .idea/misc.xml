@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/springboot01_rebuild/pom.xml" />
         <option value="$PROJECT_DIR$/springboot02_mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot02_mybatis_practice/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot03_mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot04_mvc/pom.xml" />
       </list>
     </option>
   </component>

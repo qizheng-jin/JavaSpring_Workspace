@@ -17,7 +17,7 @@
 -->
     <bean id="userDao" class="com.myweb.dao.UserDaoImpl"></bean>
 <!--
-    构建service同Dao, userDao是引用对象需要用ref
+    构建service同Dao, userDao是引用对象需要用ref引用一个ID
 -->
     <bean id="userService" class="com.myweb.service.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>

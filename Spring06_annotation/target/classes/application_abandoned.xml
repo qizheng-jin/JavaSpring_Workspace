@@ -23,12 +23,17 @@
            use-default-filters="true" 按照用户指定的规则扫描注解
 -->
 <context:component-scan base-package="com.myweb" use-default-filters="true">
-<!--    expression: 表达式-->
+    <!--    expression: 表达式-->
     <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-<!--    exclude-filter: 排除表达式-->
+</context:component-scan>
+
+
+    <!--    情景二: 不想扫描某个注释-->
+    <!--    exclude-filter: 排除表达式-->
+<context:component-scan base-package="com.myweb" use-default-filters="true">
     <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 </context:component-scan>
-<!--    情景二: 不想扫描某个注释-->
+
 
 
 
