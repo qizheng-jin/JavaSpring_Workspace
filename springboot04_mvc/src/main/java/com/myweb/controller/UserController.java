@@ -1,5 +1,6 @@
 package com.myweb.controller;
 
+import com.myweb.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
 
 /**
  * MVC调用步骤:
@@ -23,16 +25,35 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class UserController {
 
+    @RequestMapping("/addUser")
+    public String addUserParam(User user){
+        System.out.println("参数获取: " + user.getId() + "| " + user.getName() + "| " + Arrays.toString(user.getHobbys()) + "|" + user.getDog());
+        return "success";
+    }
+
+    /**
+     * 同名提交测试
+     * 参数提交形式：SpringMVC自动将参数列用","进行拼接, MVC自动创建了字符串数组去接收
+     * String... 变量名: 可变参数类型, 实质就是数组
+     *
+     */
+//    @RequestMapping("/addUser")
+//    public String addUserParam(@RequestParam(value = "id") Integer i, String name, String... hobbys){
+//        System.out.println("参数获取: " + i + "| " + name + "| " + Arrays.toString(hobbys));
+//        return "success";
+//    }
+
+
     /**
      * 测试@RequestParam注解
      * @param model
      * @return
      */
-    @RequestMapping("/addUser")
-    public String addUserParam(@RequestParam(value = "id") Integer i, String name){
-        System.out.println("参数获取: " + i + ", " + name);
-        return "success";
-    }
+//    @RequestMapping("/addUser")
+//    public String addUserParam(@RequestParam(value = "id") Integer i, String name){
+//        System.out.println("参数获取: " + i + ", " + name);
+//        return "success";
+//    }
 
     @RequestMapping("/user")
     public String toUser(Model model){
