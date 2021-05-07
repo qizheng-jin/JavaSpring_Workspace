@@ -66,7 +66,7 @@ public class UserController {
 //    这是标准方法
 //    @RequestMapping("/addUser")
 //    public String addUser(Integer id, String name){
-//        System.out.println("参数获取:" + id + ", "+ name);
+//        System.out.println("参数获取:" + id + ", "+ name);//传的参数是前端的name属性名
 //        return "success";
 //    }
     /**

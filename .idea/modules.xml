@@ -24,6 +24,10 @@
       <module fileurl="file://$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" filepath="$PROJECT_DIR$/springboot02_mybatis_practice/springboot02_mybatis_practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot03_mybatis_plus/springboot03_mybatis_plus.iml" filepath="$PROJECT_DIR$/springboot03_mybatis_plus/springboot03_mybatis_plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot04_mvc/springboot04_mvc.iml" filepath="$PROJECT_DIR$/springboot04_mvc/springboot04_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot04_mvc_practice/springboot04_mvc_practice.iml" filepath="$PROJECT_DIR$/springboot04_mvc_practice/springboot04_mvc_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot05_mvc/springboot05_mvc.iml" filepath="$PROJECT_DIR$/springboot05_mvc/springboot05_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot06_JSON/springboot06_JSON.iml" filepath="$PROJECT_DIR$/springboot06_JSON/springboot06_JSON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot06_JSON_practice/springboot06_JSON_practice.iml" filepath="$PROJECT_DIR$/springboot06_JSON_practice/springboot06_JSON_practice.iml" />
     </modules>
   </component>
 </project>

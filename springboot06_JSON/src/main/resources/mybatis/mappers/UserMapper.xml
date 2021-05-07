@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myweb.mapper.DemoUserMapper">
+<!--
+    查询标签必须有返回值
+    resultType： 直接返回POJO对象的数据 单表查询
+    resultMap： <返回数据类型， 返回结果>使用与关联查询的结果封装 一般采用第三方对象接收
+-->
+<!--    <select id="findAll" resultType="DemoUser">-->
+<!--        select * from demo_user-->
+<!--    </select>-->
+    <insert id="insertUser">
+        insert into demo_user
+        value(#{id}, #{name}, #{age}, #{sex});
+    </insert>
+    <update id="updateUser">
+        update demo_user
+        set name=#{name}
+        where id=#{id}
+    </update>
+</mapper>

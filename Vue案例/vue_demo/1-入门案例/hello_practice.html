@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hello</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Hello</h1>
+			<h1>{{world}}</h1>
+		</div>
+		
+		
+		
+		
+		
+		<script src="../js/vue.js" type="text/javascript"></script>
+		<script>
+			/**
+			 * var let const区别
+			 * var作用于全局 const定义常量 let有作用域的变量声明
+			 */
+			const v = new Vue({
+				el: "#app",
+				data: {
+					world: "world"
+				}
+			})
+		</script>
+	</body>
+</html>
