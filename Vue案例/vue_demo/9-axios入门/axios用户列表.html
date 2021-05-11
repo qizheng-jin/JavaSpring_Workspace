@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			用户编号:<input type="text" v-model="user.id" /><!-- disabled表示禁用 -->
+			用户姓名:<input type="text" v-model="user.name"/><br />
+			用户年龄:<input type="text" v-model="user.age"/>
+			用户性别:<input type="text" v-model="user.sex"/>
+			<button value="更新" @click="updateUser()">更新</button>
+			<hr />
+			<table border="1px" align="center" width="800px">
+			   <tr>
+				   <td colspan="5" align="center"><h3>用户列表</h3></td>
+			   </tr>
+			   <tr align="center">
+				   <td>ID</td>
+				   <td>名称</td>
+				   <td>年龄</td>
+				   <td>性别</td>
+				   <td>操作</td>
+			   </tr>
+			   <tr align="center" v-for="user in userList">
+				   <td>{{user.id}}</td>
+				   <td>{{user.name}}</td>
+				   <td>{{user.age}}</td>
+				   <td>{{user.sex}}</td>
+				   <td>
+					   <button @click="updateBtn(user)">修改</button>
+					   <button>删除</button>
+				   </td>
+			   </tr>
+		   </table>
+	   </div>
+   
+   
+		<script src="../js/vue.js"></script>
+		<script src="../js/axios.js"></script>
+		<script>
+			const app = new Vue({
+				el: "#app",
+				data: {
+					//1.用户列表数据
+					userList: [],
+					//2. 定义用户属性
+					user: {
+						id: '',
+						name: '',
+						age: '',
+						sex: ''
+					}
+					
+				},
+				methods:{
+					async getUserList(){
+						const {data:result} = await axios.get('http://localhost:8090/axios/findAll')
+						this.userList = result
+						console.log(this.userList)
+						
+					},
+					updateBtn(user){
+						console.log(user)
+						this.user = user
+					},
+					//更新用户的操作
+					async updateUser(){
+						await axios.put("http://localhost:8090/axiosUser/updateUser", this.user)
+						getUserList()
+					},
+					async deleteUser(){
+						let id = this.id
+						await axios.delete('http://localhost:8090/axiosUser/deleteUser', {
+							params: {
+								id: id // 可以简写为id因为名字一样
+							}
+						})
+						getUserList()
+					}
+					
+				},
+				mounted(){
+					//当页面渲染成功之后进行调用,则执行mounted函数
+					this.getUserList();
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生命周期</title>
+	</head>
+	<body>
+		<div id="app">
+			
+		</div>
+		<script src="../js/vue.js"></script>
+		<script>
+			new Vue({
+				el: '#app',
+				data: {
+					
+				},
+				methods:{
+					
+				},
+				beforeCreate(){
+					console.log("初始化");
+				},
+				created(){
+					console.log("在实例化创建完成后,并且完成了配置之后调用");
+				},
+				beforeMount(){
+					console.log("数据在备挂在前调用beforeMount")
+				},
+				mounted(){
+					console.log("页面加载完成mounted");
+				},
+				beforeUpdate(){
+					console.log("更新数据时调用")
+				},
+				updated(){
+					console.log("数据修改后调用")
+				}
+				
+			})
+		</script>
+	</body>
+</html>

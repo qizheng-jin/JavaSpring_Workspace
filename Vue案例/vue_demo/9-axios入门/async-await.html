@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			
+		</div>
+		<script src="../js/axios.js"></script>
+		<script>
+			axios.defaults.baseURL = "http://localhost:8090/"
+			//ajax方法
+			async function getHello(){
+				//data是对象中的属性
+				const {data: str} = await axios.get("hello")
+				console.log(str)
+				
+			}
+			getHello();
+		</script>
+	</body>
+</html>

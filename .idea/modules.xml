@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" filepath="$PROJECT_DIR$/Spring07_TransactionManager/Spring07_TransactionManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring08_AOP/Spring08_AOP.iml" filepath="$PROJECT_DIR$/Spring08_AOP/Spring08_AOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring08_AOP_practice/Spring08_AOP_practice.iml" filepath="$PROJECT_DIR$/Spring08_AOP_practice/Spring08_AOP_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice_login/practice_login.iml" filepath="$PROJECT_DIR$/practice_login/practice_login.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring01_base/spring01_base.iml" filepath="$PROJECT_DIR$/spring01_base/spring01_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" filepath="$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring03_factory/spring03_factory.iml" filepath="$PROJECT_DIR$/spring03_factory/spring03_factory.iml" />

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot05_mvc" />
         <module name="springboot01_rebuild" />
+        <module name="practice_login" />
         <module name="Spring08_AOP_practice" />
         <module name="springboot04_mvc" />
         <module name="Spring06_mvc" />
@@ -36,6 +37,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="practice_login" target="1.8" />
       <module name="Spring00_Mybatis" target="1.8" />
       <module name="spring02_ioc" target="1.8" />
       <module name="spring03_factory" target="1.8" />
@@ -70,6 +72,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="practice_login" options="-parameters" />
       <module name="spring03_mp_rebuild" options="-parameters" />
       <module name="spring04_mvc_practice" options="-parameters" />
       <module name="springboot01_build" options="-parameters" />

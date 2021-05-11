@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件绑定</title>
+		<link rel="stylesheet"
+		          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+		          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		          crossorigin="anonymous"
+		    >
+	</head>
+	<body>
+		<div id="app">
+			{{num}}<br>
+			<!-- v-on:可以简写为@ -->
+			<button class="btn btn-primary" @click.stop="toAdd()">自增</button>
+			<!-- 阻止标签默认的行为, 则使用prevent属性, 将同步跳转转为异步 -->
+			<a href="http://www.baidu.com" @click.prevent ="baidu()">百度</a>
+			<!-- 同步提交到百度 -->
+			<form action="http://www.baidu.com">
+				<input name="name" />
+				<input type="submit" value="提交"/>
+			</form>
+			<!-- 异步提交到百度 -->
+			<form action="http://www.baidu.com">
+				<input name="name" />
+				<input type="submit" value="提交" @click.prevent="baidu()"/>
+			</form>
+			<button @keyup.enter="handler()">按回车键触发</button>
+			<br>
+			<input type="text" id="fNum" name="fname" v-model="first" placeholder="请输入第一个数"><br>
+			
+			<input id="fNum" name="fname" v-model="second" placeholder="请输入第二个数"><br>
+			
+			<button id="addBtn" name="addBtn" class="btn btn-primary" @click="toAdd()">加法</button><br>
+			{{result}}
+			
+		</div>
+		
+		<script src="../js/vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: "#app",
+				data: {
+					msg: 'abc',
+					num: 100,
+					first: '',
+					second: '',
+					result: ''
+					
+				},
+				methods: {
+					toAdd: function(){
+						this.num++;
+					},
+					addnum: function(){
+						this.num++
+					},
+					baidu: function(){
+						console.log("AAAA");
+					},
+					handler: function(){
+						console.log("按键触发生效")
+					},
+					
+					toAdd: function(){
+						this.result = parseInt(this.first) + parseInt(this.second);
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

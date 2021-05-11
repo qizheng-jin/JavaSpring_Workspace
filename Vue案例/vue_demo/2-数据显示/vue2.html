@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+	<style>
+		/**
+		 * 渲染没有完成时不展现
+		 */
+		[v-clock]{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+    <div id="app" >
+		<p v-cloak>{{success}}</p>
+		<p v-text="msg"></p>
+		<p v-html="html"></p>
+		<!-- 在vue解析前就展示 -->
+		<p v-pre>{{name}}</p>
+		<!-- 元素只被解析一次 -->
+		<p v-once>{{once}}</p>
+		<p name="model">
+			<input v-model="model" />
+		</p>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+			data: {
+				success: "success",
+				msg: "测试v-text指令",
+				html: "<h1>v-html</h1>",
+				name: "v-pre测试",
+				once: '测试解析的次数',
+				model: '测试双向绑定'
+			},
+			methods: {
+				
+			}
+        })
+    </script>
+</body>
+</html>

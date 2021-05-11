@@ -6,7 +6,7 @@
                             http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <!--管理User对象-->
-    <bean id="user" class="com.myweb.pojo.User">
+    <bean id="user" class="com.myweb.pojo.UserAccount">
         <property name="id" value="001"></property>
         <property name="name" value="刘备"></property>
         <property name="list">
@@ -39,7 +39,7 @@
         </property>
     </bean>
 
-    <bean id="user_constr" class="com.myweb.pojo.User">
+    <bean id="user_constr" class="com.myweb.pojo.UserAccount">
         <constructor-arg name="id" value="002"></constructor-arg>
         <constructor-arg name="name" value="关羽"></constructor-arg>
     </bean>

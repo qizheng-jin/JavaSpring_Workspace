@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>过滤器练习</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" v-model="username"><br>
+			{{username |  rename}}<br>
+			<!-- 过滤器的级联 -->
+			{{username | rename | addChar}}
+		</div>
+		<script src="../js/vue.js"></script>
+		<script>
+			//单独定义过滤器 参数一：定义过滤器名字 参数二：过滤器执行的方法
+			Vue.filter('rename', function(val){
+				
+				return val.split('').reverse().join('')
+			})
+			//箭头函数写法， 可以省略function关键字， 如果只有一个参数则括号也可以省略 使用=>进行关联
+			Vue.filter('addChar', val => {
+				
+				return val + '哈哈哈'
+			})
+			
+			new Vue({
+				el: "#app",
+				data: {
+					username: '',
+					
+				},
+				methods: {
+					
+				}
+			})
+		</script>
+	</body>
+</html>

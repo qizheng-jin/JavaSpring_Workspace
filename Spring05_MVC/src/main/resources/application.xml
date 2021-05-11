@@ -6,7 +6,7 @@
                             http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
 <!--    构建user对象-->
-    <bean id="user" class="com.myweb.pojo.User">
+    <bean id="user" class="com.myweb.pojo.UserAccount">
         <property name="id" value="100"></property>
         <property name="name" value="小明"></property>
     </bean>

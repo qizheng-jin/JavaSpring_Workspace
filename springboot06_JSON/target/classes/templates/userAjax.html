@@ -33,11 +33,48 @@
         <button>修改</button>
         <button>增加</button>
     </div>
+    <div>
+        ID：<input type="text" ><br>
+        姓名：<input type="text" ><br>
+        年龄：<input type="text" ><br>
+        性别：<input type="text" ><br>
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script>
 		//1. jQuery中有一种编程思想 函数式编程
 		$(function(){
-			//让整个页面加载完成之后再次执行。
+			//让整个页面加载完成之后再执行. 以后所有的操作都应该在函数内完成!!!!
+						
+						/**
+						 * 常见Ajax用法
+						 * 1.$.get(url地址,提交数据(域名中？后面的部分),回调函数,返回值类型)
+						 * 2.$.post(...)
+						 * 
+						 * for循环的写法
+						  1.常规for循环
+							  for(var i=0;i<result.length;i++){
+								var user = result[i];
+								console.log(user)
+							  }
+						  
+						  2.使用in的关键字
+							  //关键字 in index 代表遍历的下标
+							  for(index in result){
+								var user = result[index]
+								console.log(user)
+							  }
+						 * 
+						 
+						  3.使用of关键字
+							for(user of result){
+								console.log(user)
+							}
+						  
+						
+						 * 业务需求:
+						 * 	要求向后端服务器发起请求 /findAjaxUser,之后将返回值结果 进行页面解析
+						 */
 			// alert("jQuery调试");
 			$("#id").text("0001");
 			// $.get(请求地址, 提交数据, 回调函数函数, 返回值结果 )

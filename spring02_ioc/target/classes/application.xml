@@ -19,7 +19,7 @@
         init-method="初始化方法名"初始化方法
         destroy-method="销毁方法名"销毁方法
     -->
-    <bean id="user" class="com.myweb.pojo.User" scope="singleton" lazy-init="true" init-method="init" destroy-method="destroy">
+    <bean id="user" class="com.myweb.pojo.UserAccount" scope="singleton" lazy-init="true" init-method="init" destroy-method="destroy">
         <property name="name" value="first"></property>
     </bean>
 </beans>

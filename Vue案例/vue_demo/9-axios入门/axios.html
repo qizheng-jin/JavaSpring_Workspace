@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>axios</title>
+	</head>
+	<body>
+		
+		<script src="../js/axios.js"></script>
+		<script type="text/javascript">
+			//1. 发起get请求
+			//axios参数只有两个: 1. url地址， 提交的参数
+			//跨域请求：浏览器不能正常执行
+			let url = "http://localhost:8090/hello"
+			axios.get(url)
+				 .then(function(result){
+					 //获取返回值，promise对象
+					 console.log(result)
+					 //如果想获取服务器返回值则使用.data属性
+					 console.log(result.data)
+				 })
+			 url = "http://localhost:8090/axios?id=100"
+			 axios.get(url)
+				 .then(result=>{
+					 //获取返回值，promise对象
+					 console.log(result)
+					 //如果想获取服务器返回值则使用.data属性
+					 console.log(result.data)
+				 })
+			 axios.get('http://localhost:8090/axios/100')
+			 axios.get(url)
+				  .then(result =>{
+					  console.log(result)
+					  console.log(result.data)
+				  })
+			 axios.get('http://localhost:8090/axiosParams',{
+				 params: {
+					 id: 100,
+
+				 }
+			 }).then(result=>{
+				 console.log(result)
+				 console.log(result.data)
+			 })
+			
+			axios.get('http://localhost:8090/test/100')
+			     .then(result=>{
+					console.log(result)
+					console.log(result.data)
+				})
+				
+			// axios.get('http://localhost:8090/test', {
+			// 	params: {
+			// 		id: 100,
+			// 	}
+			// }).then(result => {
+			// 	console.log(result)
+			// 	console.log(result.data)
+			// })
+			
+			
+			
+			/**
+			 * Axios中POST/PUT的请求
+			 * post/put说明:
+			 *   如果采用对象的方式进行数据的传输, 则发起请求时
+			 * 自动的转化为JSON格式进行数据传递
+			 */
+			
+			axios.post('http://localhost:8090/addAxios', {
+				id: 100,
+				name: 'tomcat'
+			}).then(result => {
+				console.log( result.data)
+			})
+			
+			/**
+			 * 通过form表单的方式提交数据
+			 */
+			//1. 定义form的表单对象
+			let params = new URLSearchParams()
+			params.append("id", 100)
+			params.append("name", "tomcat猫")
+			axios.post('http://localhost:8090/addAxiosForm', params)
+			     .then(result => {
+					console.log( result.data)
+			})
+			//POST&RestFul
+			axios.post('http://localhost:8090/axios2/1000/tomcat')
+			     .then(result =>{
+					 console.log( result.data)
+				 })
+			
+			//配置AJAX的基本路径
+			axios.defaults.baseURL = "http://localhost:8090/"
+			//添加请求头信息 token 令牌
+			axios.defaults.headers.mytoken = '586738625'//不能打中文!
+			axios.get("hello")
+			     .then(function(result){
+					 console.log("基本路径的写法优化!!!!")
+				 })
+		</script>
+	</body>
+</html>
